@@ -1,6 +1,6 @@
 README.md files, issues, pull request comments, etc. on github all use the mark down syntax for formating (it is similar, but not completely identical to the markdown used in jupyter notebooks).
 
-This is a very helpful [*MarkDown CheatSheet*](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Below are a few of the most useful/common syntax used in our projects:
+This is a very helpful [<span class="underline">MarkDown CheatSheet</span>](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Below are a few of the most useful/common syntax used in our projects:
 
 - Titles start with a “\#” the more “\#\#\#”s the lower the subtitle
 
@@ -18,10 +18,10 @@ This is a very helpful [*MarkDown CheatSheet*](https://github.com/adam-p/markdow
 
 - \[word to appear\](url) will make the “words to appear” be a link to the specified url
 
-- ~~Scratch this.~~ results in strike through
+- \~\~Scratch this.\~\~ results in strike through
 
 - italics \*1asterisks\* or \_1underscore\_
 
-- bold \*\*2asterisks\*\* or \_\_2underscores\_\_
+- bond \*\*2asterisks\*\* or \_\_2underscores\_\_
 
 - "\\" allows you to insert any of the characters above, so if you want to actually show an underscore and not bold the text use "\\\_"
