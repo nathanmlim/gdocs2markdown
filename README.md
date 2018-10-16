@@ -4,7 +4,7 @@ This directory has Google docs with instructions and links to tutorials for good
 
 This file includes links to potentially useful tutorials and resources. Please feel free to add resources to this document or contact the [<span class="underline">person incharge of github/coding training</span>](https://docs.google.com/document/d/1Eg8RrzOkVbDpDjGlE6ttzCz8QpbMo_QFfazVoXa1hhU/edit) (currently Caitlin) with any questions or recommendations.
 
-A note on formatting, since Google doesn’t have an easy way to insert a coding font (such as \`code text\` in slack or markdown), those will be colored pink here instead, and tabbed in if it is a block of code at once, for example:
+A note on formatting, since Google doesn't have an easy way to insert a coding font (such as \`code text\` in slack or markdown), those will be colored pink here instead, and tabbed in if it is a block of code at once, for example:
 
 import numpy as np
 
@@ -54,7 +54,7 @@ print(a\*\*2)
 
   - This is a blog I recently discovered that has great examples and explanations of just about everything you want to know about python, great place to look if you want to understand something better.
 
-  - They also have some courses behind a pay wall that I can’t speak to
+  - They also have some courses behind a pay wall that I can't speak to
 
 - [<span class="underline">Codecademy</span>](https://www.codecademy.com/)
 
@@ -74,17 +74,17 @@ Coding style is important in python (and all languages). Following the style exp
 
 ## GitHub Resources
 
-We’ve included here a series of tutorial/instruction files for GitHub. However, GitHub is a popular resource used by many groups, developers, and companies so there are a lot of online resources as well. See [<span class="underline">Getting Started</span>](https://docs.google.com/document/d/15GPXIdxUpaz693vgKeKaM5yQb0q7dBS61tUg4E3mBUc/edit?usp=sharing) in the GitHub Tutorials folder for more online resources, also when in doubt google for what you want to do there is probably a Git command for it.
+We've included here a series of tutorial/instruction files for GitHub. However, GitHub is a popular resource used by many groups, developers, and companies so there are a lot of online resources as well. See [<span class="underline">Getting Started</span>](https://docs.google.com/document/d/15GPXIdxUpaz693vgKeKaM5yQb0q7dBS61tUg4E3mBUc/edit?usp=sharing) in the GitHub Tutorials folder for more online resources, also when in doubt google for what you want to do there is probably a Git command for it.
 
 ## Tutorials for Other Tools and Languages
 
-Our group primarily works in Python, but if you’re looks for other resources hopefully we have a place to start
+Our group primarily works in Python, but if you're looks for other resources hopefully we have a place to start
 
 ### C++
 
 - [<span class="underline">C++ programming for Quantum Chemistry Tutorial</span>](http://sirius.chem.vt.edu/wiki/doku.php?id=crawdad:programming)
 
-  - This one came from Daniel Crawford’s group at Virginia Tech, they are primarily a QM group, but this tutorial includes a decent fundamentals introduction to the language. Also, working on science projects are likely more interesting than just learning how to print “Hello World”
+  - This one came from Daniel Crawford's group at Virginia Tech, they are primarily a QM group, but this tutorial includes a decent fundamentals introduction to the language. Also, working on science projects are likely more interesting than just learning how to print "Hello World"
 
 - More General C++ tutorials, not specific to scientific computing
 
@@ -96,4 +96,4 @@ Our group primarily works in Python, but if you’re looks for other resources h
 
 - [<span class="underline">What is Docker and How to Use it With Python (Tutorial)</span>](https://dev.to/djangostars/what-is-docker-and-how-to-use-it-with-python-tutorial-87a)
 
-  - \[CCB\] I haven’t actually read this yet, I’ve been wanting to learn about Docker and this looks like an easy to follow tutorial.
+  - \[CCB\] I haven't actually read this yet, I've been wanting to learn about Docker and this looks like an easy to follow tutorial.
