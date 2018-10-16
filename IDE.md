@@ -8,7 +8,7 @@ IDE stands for integrated development environment, that is the software you use 
 
   - Used by Caitlin, Guilherme, Dr. Mobley, Victoria, Jessica, Nathan, Sam?
 
-  - Make sure your .vimrc file has all required settings, see Caitlin's example file on github: [<span class="underline">https://github.com/MobleyLab/SharedScripts/blob/master/Caitlin/vimrc</span>](https://github.com/MobleyLab/SharedScripts/blob/master/Caitlin/vimrc)
+  - Make sure your .vimrc file has all required settings, see Caitlin’s example file on github: [<span class="underline">https://github.com/MobleyLab/SharedScripts/blob/master/Caitlin/vimrc</span>](https://github.com/MobleyLab/SharedScripts/blob/master/Caitlin/vimrc)
 
 - [<span class="underline">Atom</span>](https://atom.io/)
 
@@ -24,20 +24,20 @@ IDE stands for integrated development environment, that is the software you use 
 
     - This includes, sometimes helpful statements about why something is syntactically incomplete.
 
-    - Note - the syntax checking and autocomplete work with your custom python environment so you have classes you've built or other people have in specified environment it will look for those as well.
+    - Note - the syntax checking and autocomplete work with your custom python environment so you have classes you’ve built or other people have in specified environment it will look for those as well.
 
 - XCode
 
-  - Common with apple users \[CCB\] - that's all I know.
+  - Common with apple users \[CCB\] - that’s all I know.
 
   - Used by Camila
 
 - Emacs
 
-  - This is another command line tool for simple text editting. \[CCB\] - that's all I know.
+  - This is another command line tool for simple text editting. \[CCB\] - that’s all I know.
 
   - Used by no one currently (I think)
 
 # Most people use more than one:
 
-Bigger IDE's such as PyCharm and Atom aren't practical if you're only making small changes, so it is best to be familiar with a commandline accessible tool such as vim so you can make quick changes (this is especially important when working on green planet or other clusters since you probably won't have access to your other tools). If you're going to be working on larger coding projects however, a tool that comes with spelling/syntax checking and autocomplete will make your life a lot easier.
+Bigger IDE’s such as PyCharm and Atom aren’t practical if you’re only making small changes, so it is best to be familiar with a commandline accessible tool such as vim so you can make quick changes (this is especially important when working on green planet or other clusters since you probably won’t have access to your other tools). If you’re going to be working on larger coding projects however, a tool that comes with spelling/syntax checking and autocomplete will make your life a lot easier.
