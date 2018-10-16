@@ -14,7 +14,7 @@ This is a very helpful [<span class="underline">MarkDown CheatSheet</span>](http
 
     - Note you can click on these, they don't appear like a \[ \]
 
-- "&gt;" at the front of a line to quote something said above
+- "\>" at the front of a line to quote something said above
 
 - \[word to appear\](url) will make the "words to appear" be a link to the specified url
 
