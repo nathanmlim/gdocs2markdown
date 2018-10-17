@@ -1,4 +1,3 @@
 .DS_STORE
-docs/build/*
 docs/source/*
 *.ipynb_checkpoints/
