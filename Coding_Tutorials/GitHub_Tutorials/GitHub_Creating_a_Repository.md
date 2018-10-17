@@ -1,20 +1,24 @@
+- [Start on GitHub](#start-on-github)
+  - [Include Initial Files](#include-initial-files)
+  - [Completely Empty Repository](#completely-empty-repository)
+
 This section includes instructions for how to create a new GitHub repository.
 
 # Start on GitHub
 
 - Click on the octocat symbol in the top left corner to get to your newsfeed
 
-  - <img src="media/image2.png" style="width:0.58333in;height:0.51042in" />
+  - <img src="./media/image2.png" style="width:0.58333in;height:0.51042in" />
 
-- On the left select “New repository"
+- On the left select "New repository\"
 
-  - <img src="media/image1.png" style="width:3.85417in;height:1.35417in" />
+  - <img src="./media/image1.png" style="width:3.85417in;height:1.35417in" />
 
-- This will open a screen with options for your repository:<img src="media/image3.png" style="width:5.22377in;height:3.52604in" />
+- This will open a screen with options for your repository:<img src="./media/image3.png" style="width:5.22377in;height:3.52604in" />
 
 - Owner:
 
-  - You should probably put it on the MobleyLab group or another Collaboration group so that when you graduate others will still have easy access to the repository. If it is for personal use or you’re writing a paper, then your personal account is also fine
+  - You should probably put it on the MobleyLab group or another Collaboration group so that when you graduate others will still have easy access to the repository. If it is for personal use or you're writing a paper, then your personal account is also fine
 
   - You can change Owners on github repos
 
@@ -28,17 +32,17 @@ This section includes instructions for how to create a new GitHub repository.
 
 - Description
 
-  - This is a short blurb at the top of your repository, it isn’t required, but if you chose to write something make sure to keep it clear and consise and remember a user might read this before seeing your README since this is at the top.
+  - This is a short blurb at the top of your repository, it isn't required, but if you chose to write something make sure to keep it clear and consise and remember a user might read this before seeing your README since this is at the top.
 
 - Public or Private
 
-  - If this repository if for a project in the group, you probably want it to be public. Check with Dr. Mobley or other grad students/post docs on the project if you aren’t sure
+  - If this repository if for a project in the group, you probably want it to be public. Check with Dr. Mobley or other grad students/post docs on the project if you aren't sure
 
-  - If you’re creating a personal repository, its up to you, some things to consider:
+  - If you're creating a personal repository, its up to you, some things to consider:
 
     - If this code would be useful to other people in the community then you should make it public.
 
-    - How would you feel if a potential employer or collaborator stumbled upon this directory. If you don’t want them to see whatever you’re doing here, make it private
+    - How would you feel if a potential employer or collaborator stumbled upon this directory. If you don't want them to see whatever you're doing here, make it private
 
 - Now there are two options, do you want to create a repository with initial files that is otherwise empty or do you want to start from an exisiting directory on your desktop. Below are directions for both options, if this is your first time starting with **Include initial files** is probably better.
 
@@ -52,9 +56,9 @@ After clicking a new repository, you have the option of including a few default 
 
 - Add .gitignore
 
-  - You want to include this. It tells git not to track changes for files that aren’t essential to your code. For example, if you’re using python, you don’t want to track changes in a \*.pyc file!
+  - You want to include this. It tells git not to track changes for files that aren't essential to your code. For example, if you're using python, you don't want to track changes in a \*.pyc file!
 
-  - Chose the file type based on the coding language you’re working in. (There are gitignore files for almost every language include TeX if you’re writing a paper).
+  - Chose the file type based on the coding language you're working in. (There are gitignore files for almost every language include TeX if you're writing a paper).
 
 - Add a license
 
@@ -62,14 +66,14 @@ After clicking a new repository, you have the option of including a few default 
 
   - Most of the time in our group we use GNU or MIT
 
-    - If this repository is a part of an existing project you’ll want to make sure the license is consistent with the other parts of the project. (for example, the Open Force Field project always uses MIT).
+    - If this repository is a part of an existing project you'll want to make sure the license is consistent with the other parts of the project. (for example, the Open Force Field project always uses MIT).
 
     - Basically both of these licenses say that the code is available free of charge AS IS and that people can do whatever they want with it as long as they site you.
 
-- Click “create repository" when you’re ready (This will open your repository)
+- Click "create repository\" when you're ready (This will open your repository)
 
-- [**<span class="underline">Clone your repository</span>**](https://docs.google.com/document/d/1kXob_nXz-LxOyJcHq-zgJnskma10SPXm7YCy1dhujq0/edit?usp=sharing) to your terminal so you can add files and start working
+- [**[Clone your repository]{.underline}**](https://docs.google.com/document/d/1kXob_nXz-LxOyJcHq-zgJnskma10SPXm7YCy1dhujq0/edit?usp=sharing) to your terminal so you can add files and start working
 
 ## Completely Empty Repository
 
-In this scenario you basically say no initializing a README or including a .gitignore or license file. When you click “Create repository” github will give you instructions for how to initialize files in your git repository from a directory in your terminal. Note, that you MUST have a license file in order for other people to use your code and .gitignore files are extremely useful so unless your local directory already has these items, I recommend initializing these files and then moving anything you want in the repository into your folder after [**<span class="underline">cloning your repository</span>**](https://docs.google.com/document/d/1kXob_nXz-LxOyJcHq-zgJnskma10SPXm7YCy1dhujq0/edit?usp=sharing).
+In this scenario you basically say no initializing a README or including a .gitignore or license file. When you click "Create repository" github will give you instructions for how to initialize files in your git repository from a directory in your terminal. Note, that you MUST have a license file in order for other people to use your code and .gitignore files are extremely useful so unless your local directory already has these items, I recommend initializing these files and then moving anything you want in the repository into your folder after [**[cloning your repository]{.underline}**](https://docs.google.com/document/d/1kXob_nXz-LxOyJcHq-zgJnskma10SPXm7YCy1dhujq0/edit?usp=sharing).

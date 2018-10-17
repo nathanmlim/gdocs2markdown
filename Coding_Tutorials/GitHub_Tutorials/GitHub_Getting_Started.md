@@ -1,46 +1,55 @@
+- [What is GitHub](#what-is-github)
+  - [Why our group uses GitHub because it \...](#why-our-group-uses-github-because-it-...)
+- [Create A GitHub Account](#create-a-github-account)
+- [Syncing Your Account](#syncing-your-account)
+- [Where do I go Next](#where-do-i-go-next)
+- [Outside Resources](#outside-resources)
+- [Working on shared projects (an argument for GitHub):](#working-on-shared-projects-an-argument-for-github)
+- [Notifications](#notifications)
+
 # What is GitHub
 
 GitHub is a website for storing and editing code, it includes a lot of diverse functionality that allow for multiple programer to work on the same project. The biggest benefit is complete version control.
 
-### Why our group uses GitHub because it ...
+### Why our group uses GitHub because it \...
 
 - simplifies collaborating on code, allowing multiple people to work on the same project
 
 - makes it easy to give and receive feedback on your code
 
-- makes your code available to the community at large, you can site GitHub repositories and allows you to share projects that haven’t been published in a journal with collaborators and others in the field. Your code is more likely to be used if it is easy to find.
+- makes your code available to the community at large, you can site GitHub repositories and allows you to share projects that haven't been published in a journal with collaborators and others in the field. Your code is more likely to be used if it is easy to find.
 
-- includes an easy to use “Issue Tracker” that lets you and anyone else highlight problems or planned changes to the code, we use these as checklists for projects and a way to report bugs.
+- includes an easy to use "Issue Tracker" that lets you and anyone else highlight problems or planned changes to the code, we use these as checklists for projects and a way to report bugs.
 
 - provides a platform to automatically test code gaurenteeing your code in the current form works the way you think it should.
 
 # Create A GitHub Account
 
-- Make an account on [<span class="underline">github.com</span>](https://github.com)
+- Make an account on [[github.com]{.underline}](https://github.com)
 
   - make sure to use your uci.edu e-mail
 
-- Follow this link to get the <span class="underline">Student Developer Pack</span>
+- Follow this link to get the [Student Developer Pack]{.underline}
 
   - This includes unlimited private repositories
 
 - List your user name on the Research Group GitHub usernames note on Evernote
 
-  - Tell D. Mobley you've done this so he gets you connected with the Mobley Lab group on GitHub
+  - Tell D. Mobley you\'ve done this so he gets you connected with the Mobley Lab group on GitHub
 
 # Syncing Your Account
 
-This section will have instructions for how to tell github your computer has permission to make changes on your account, you can do this for multiple computers and your green planet account. For now follow the instructions here: [<span class="underline">https://help.github.com/articles/connecting-to-github-with-ssh/</span>](https://help.github.com/articles/connecting-to-github-with-ssh/)
+This section will have instructions for how to tell github your computer has permission to make changes on your account, you can do this for multiple computers and your green planet account. For now follow the instructions here: [[https://help.github.com/articles/connecting-to-github-with-ssh/]{.underline}](https://help.github.com/articles/connecting-to-github-with-ssh/)
 
 # Where do I go Next
 
-This directory includes documentation from the group. It is mained by the current [<span class="underline">github/infrastructure training person</span>](https://docs.google.com/document/d/1Eg8RrzOkVbDpDjGlE6ttzCz8QpbMo_QFfazVoXa1hhU/edit?usp=sharing) (currently Caitlin). If you have questions about anything posted here talk to them. Feel free to update any of the writing if you find it to be more clear.
+This directory includes documentation from the group. It is mained by the current [[github/infrastructure training person]{.underline}](https://docs.google.com/document/d/1Eg8RrzOkVbDpDjGlE6ttzCz8QpbMo_QFfazVoXa1hhU/edit?usp=sharing) (currently Caitlin). If you have questions about anything posted here talk to them. Feel free to update any of the writing if you find it to be more clear.
 
-Your next step depends on how you’re going to start using Github:
+Your next step depends on how you're going to start using Github:
 
-- If you’re joining an existing project or one of the older graduate students already made a repository, check out [<span class="underline">Cloning a Repository</span>](https://docs.google.com/document/d/1kXob_nXz-LxOyJcHq-zgJnskma10SPXm7YCy1dhujq0/edit?usp=sharing) and then [<span class="underline">Working in your repository</span>](https://docs.google.com/document/d/1Ivk_IHnZd862YWdlppmqpU_0VRKY9FbbAOZ-XNC-TN8/edit?usp=sharing)
+- If you're joining an existing project or one of the older graduate students already made a repository, check out [[Cloning a Repository]{.underline}](https://docs.google.com/document/d/1kXob_nXz-LxOyJcHq-zgJnskma10SPXm7YCy1dhujq0/edit?usp=sharing) and then [[Working in your repository]{.underline}](https://docs.google.com/document/d/1Ivk_IHnZd862YWdlppmqpU_0VRKY9FbbAOZ-XNC-TN8/edit?usp=sharing)
 
-- If you are starting a new project, you’ll need to [<span class="underline">Create a New Repository</span>](https://docs.google.com/document/d/1ggRCqv0VcuQnd6Ct_icz6L5P_2XNL3DxNolfG3CppC0/edit?usp=sharing)
+- If you are starting a new project, you'll need to [[Create a New Repository]{.underline}](https://docs.google.com/document/d/1ggRCqv0VcuQnd6Ct_icz6L5P_2XNL3DxNolfG3CppC0/edit?usp=sharing)
 
 # Outside Resources
 
@@ -56,14 +65,14 @@ Git and GitHub are hugely popular tools, while our notes and instructions attemp
 
 - There are two main models for working on shared project:
 
-  - The "branch-pull-merge" model, where you create a branch within the original repository (see "branching", below), work on it, and then create a "pull request" to have your changes included in the master branch when you are ready
+  - The \"branch-pull-merge\" model, where you create a branch within the original repository (see \"branching\", below), work on it, and then create a \"pull request\" to have your changes included in the master branch when you are ready
 
     - We disfavor this model in favor of fork-pull-merge except when testing concerns dictate it or *when the project is small*
 
-  - The "fork-pull-merge" model, where you create your own fork or copy of the repository (see "forking", below), work on it, and then create a "pull request" to have your changes included in the master branch when you are ready
+  - The \"fork-pull-merge\" model, where you create your own fork or copy of the repository (see \"forking\", below), work on it, and then create a \"pull request\" to have your changes included in the master branch when you are ready
 
     - In general we prefer this model except when testing concerns dictate the branch-pull-merge model
 
 # Notifications
 
-- **Don't want GitHub notifications in your e-mail?** Create a private slack channel with a custom e-mail address and set that as your GitHub secondary e-mail address to get your notifications in Slack.
+- **Don\'t want GitHub notifications in your e-mail?** Create a private slack channel with a custom e-mail address and set that as your GitHub secondary e-mail address to get your notifications in Slack.
