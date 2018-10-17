@@ -1,6 +1,7 @@
 site_name: gdocs2markdown
 repo_url: https://github.com/nathanmlim/gdocs2markdown/
 theme: readthedocs
+use_directory_urls: true 
 nav:
 - Home: source/index.md
 - Coding_Tutorials:
