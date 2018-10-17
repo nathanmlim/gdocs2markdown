@@ -1,4 +1,5 @@
 site_name: gdocs2markdown
+repo_url: https://github.com/nathanmlim/gdocs2markdown/
 theme: readthedocs
 nav:
 - Home: source/index.md
