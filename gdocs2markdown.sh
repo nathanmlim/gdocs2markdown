@@ -13,18 +13,71 @@ convert() {
 
         #echo Converting "$ifsname" to "$outfname"
         #echo $( join_by + ${gfm_ext[*]})-$( join_by - ${off_ext})
+
         pandoc $ifsname -s --toc \
+            --extract-media="." \
             --atx-headers \
             --tab-stop=2 \
-            --extract-media="." \
             --from docx \
-            --to $( join_by + ${md_github_ext[*]}) \
+            --to $( join_by + ${gfm_ext[*]}) \
             -o $outfname
     done
 }
 
+rst_ext=(
+    rst
+    smart
+    pipe_tables
+    #raw_html
+    fenced_code_blocks
+    backtick_code_blocks
+    autolink_bare_uris
+    space_in_atx_header
+    intraword_underscores
+    strikeout
+    emoji
+    shortcut_reference_links
+    # angle_brackets_escapable
+    lists_without_preceding_blankline
+
+    hard_line_breaks
+    native_spans
+    gfm_auto_identifiers
+    #bracketed_spans
+    #raw_attribute
+    #link_attributes
+
+    #inline_code_attributes
+    #mmd_link_attributes
+)
+
+common_ext=(
+    commonmark
+
+    raw_html
+    #fenced_code_blocks
+    #gfm_auto_identifiers
+    backtick_code_blocks
+    #autolink_bare_uris
+    intraword_underscores
+    strikeout
+    hard_line_breaks
+    # mmd_link_attributes
+    emoji
+    shortcut_reference_links
+    # #angle_brackets_escapable
+    #smart
+    # raw_tex
+    #pipe_tables
+    lists_without_preceding_blankline
+    #native_spans
+    inline_code_attributes
+    #markdown_attribute
+)
+
 gfm_ext=(
     gfm
+    #commonmark
     #smart
     raw_html
     fenced_code_blocks
@@ -47,10 +100,6 @@ gfm_ext=(
     markdown_attribute
     #ntb
     #fancy_lists
-)
-
-off_ext=(
-    raw_html
 )
 
 md_github_ext=(

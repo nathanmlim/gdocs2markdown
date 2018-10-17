@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Pull_Requests - gdocs2markdown</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Pull_Requests";
+    var mkdocs_page_input_path = "GitHub_Tutorials/GitHub_Pull_Requests.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../source/" class="icon icon-home"> gdocs2markdown</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../source/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Coding_Tutorials</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Coding_Tutorials/">README</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Coding_Tutorials/Anaconda/">Anaconda</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Coding_Tutorials/IDE/">IDE</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Coding_Tutorials/Jupyter_Notebooks/">Jupyter_Notebooks</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Coding_Tutorials/MarkDown/">MarkDown</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Github_Tutorials</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">README</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Code_Coverage/">Code_Coverage</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Encrypting_on_Travis/">Encrypting_on_Travis</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Cloning/">Cloning</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Creating_a_Repository/">Creating_a_Repository</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Forking/">Forking</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Getting_Started/">Getting_Started</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Issues/">Issues</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Pull_Requests</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#create_the_pull_request">Create the Pull Request</a></li>
+    
+
+    <li class="toctree-l3"><a href="#pr_title">PR Title</a></li>
+    
+
+    <li class="toctree-l3"><a href="#pr_description">PR Description</a></li>
+    
+
+    <li class="toctree-l3"><a href="#reviews_for_your_pr">Reviews for your PR</a></li>
+    
+
+    <li class="toctree-l3"><a href="#tests_must_pass">Tests Must Pass</a></li>
+    
+
+    <li class="toctree-l3"><a href="#resolving_conflicts">Resolving Conflicts</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Working_Locally/">Working_Locally</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Integrated_Testing/">Integrated_Testing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../ReadTheDocs_and_Sphinx/">ReadTheDocs_and_Sphinx</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../source/">gdocs2markdown</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../source/">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Github_Tutorials &raquo;</li>
+        
+      
+    
+    <li>Pull_Requests</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>When you are satisfied with your changes you can use a pull request to submit your changes to the upstream branch, this will show you if there are any discrepancies between your local fork and the upstream fork that need to be addressed before merging.</p>
+<p>You can submit pull requests to any fork and branch in the system. This will depend on your project and how the people you are working with want to do things, if it’s not clear ask, but most likely:</p>
+<ul>
+<li>
+<blockquote>
+<p>One fork project it will be from your branch to the master</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Multi fork project: from [your name]/branch to the most [upstream owner]/master</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="create_the_pull_request">Create the Pull Request<a class="headerlink" href="#create_the_pull_request" title="Permanent link">#</a></h1>
+<p>Creating a pull request on a fork is the same as on a branch,</p>
+<ul>
+<li>
+<blockquote>
+<p>go to the github website</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Click on the Pull Request Tab</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>click “new pull request” button on the top right:<img alt="" src="../media/image1.png" /></p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Then choose which forks and branches you wish to merge, add a title, description and click “Create pull request"</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>Detailed instructions for what to include in these sections can be seen below</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<blockquote>
+<p>If you make more commits to your local branch those changes will automatically be added to this pull request as long as the pull request is open!</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>It is important to remember this so if you want to start making new changes that you don’t want these new changes included on this PR you should make a new branch and make your new changes there.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<blockquote>
+<p>It is bad practice to merge your own pull requests, in face most repositories will have it set so that this is impossible.</p>
+</blockquote>
+</li>
+</ul>
+<p>Below are details for what you should include in the different parts of a Pull Request</p>
+<h2 id="_1"><a class="headerlink" href="#_1" title="Permanent link">#</a></h2>
+<h1 id="pr_title">PR Title<a class="headerlink" href="#pr_title" title="Permanent link">#</a></h1>
+<h1 id="pr_description">PR Description<a class="headerlink" href="#pr_description" title="Permanent link">#</a></h1>
+<h1 id="reviews_for_your_pr">Reviews for your PR<a class="headerlink" href="#reviews_for_your_pr" title="Permanent link">#</a></h1>
+<p>Usually, you want to recruit someone with an interest in the project to do code review on your code before it's merged -- this is both a good way to get it checked for mistakes AND get helpful feedback on code development</p>
+<h1 id="tests_must_pass">Tests Must Pass<a class="headerlink" href="#tests_must_pass" title="Permanent link">#</a></h1>
+<p>Instructions for tests are available in the Travis CI file, but assuming they are set up correctly, you’ll need the tests to pass before you can merge a Pull Request.</p>
+<ul>
+<li>
+<blockquote>
+<p>Travis-CI is an environment which integrates with GitHub and allows automated testing when code changes are made</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Tests are automatically run when you use a pull request</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>To see details click on the X <img alt="" src="../media/image4.png" />or checkmark <img alt="" src="../media/image3.png" /> next to the commit</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<!-- end list -->
+
+<ul>
+<li>
+<blockquote>
+<p>If you want to run these tests on the command line navigate to the directory “tests” (it could be in a sub-directory)</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>Command: nosetest -v</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="resolving_conflicts">Resolving Conflicts<a class="headerlink" href="#resolving_conflicts" title="Permanent link">#</a></h1>
+<p>If your branch is out of date with the mast you will receive a warning that the branch cannot be merged due to conflicts:</p>
+<p><img alt="" src="../media/image2.png" /></p>
+<p>You will need to pull the master branch into your local branch and resolve any conflicts. See the <a href="https://docs.google.com/document/d/1Ivk_IHnZd862YWdlppmqpU_0VRKY9FbbAOZ-XNC-TN8/edit?usp=sharing"><span class="underline">Update your Local Repository Section of Working Locally</span></a> for details</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../GitHub_Working_Locally/" class="btn btn-neutral float-right" title="Working_Locally">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../GitHub_Issues/" class="btn btn-neutral" title="Issues"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../GitHub_Issues/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../GitHub_Working_Locally/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

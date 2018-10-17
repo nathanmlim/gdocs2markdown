@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>ReadTheDocs_and_Sphinx - gdocs2markdown</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "ReadTheDocs_and_Sphinx";
+    var mkdocs_page_input_path = "GitHub_Tutorials/ReadTheDocs_and_Sphinx.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../source/" class="icon icon-home"> gdocs2markdown</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../source/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Coding_Tutorials</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Coding_Tutorials/">README</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Coding_Tutorials/Anaconda/">Anaconda</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Coding_Tutorials/IDE/">IDE</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Coding_Tutorials/Jupyter_Notebooks/">Jupyter_Notebooks</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Coding_Tutorials/MarkDown/">MarkDown</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Github_Tutorials</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">README</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Code_Coverage/">Code_Coverage</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Encrypting_on_Travis/">Encrypting_on_Travis</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Cloning/">Cloning</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Creating_a_Repository/">Creating_a_Repository</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Forking/">Forking</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Getting_Started/">Getting_Started</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Issues/">Issues</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Pull_Requests/">Pull_Requests</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Working_Locally/">Working_Locally</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Integrated_Testing/">Integrated_Testing</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">ReadTheDocs_and_Sphinx</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#what_is_included_here">What is included here</a></li>
+    
+
+    <li class="toctree-l3"><a href="#disclaimer">Disclaimer</a></li>
+    
+
+    <li class="toctree-l3"><a href="#rst_files">RST files</a></li>
+    
+
+    <li class="toctree-l3"><a href="#building_doc_files_locally">Building Doc Files Locally</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#download_sphinx_and_run_quickstart">Download Sphinx and run quickstart</a></li>
+        
+            <li><a class="toctree-l4" href="#edit_source_files">Edit Source Files</a></li>
+        
+            <li><a class="toctree-l4" href="#edit_configuration_files">Edit Configuration Files</a></li>
+        
+            <li><a class="toctree-l4" href="#check_your_build">Check your build</a></li>
+        
+            <li><a class="toctree-l4" href="#push_all_these_files_to_github">Push all these files to GitHub</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#set_up_readthedocs">Set Up ReadTheDocs</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#setup_account">Setup account</a></li>
+        
+            <li><a class="toctree-l4" href="#create_new_project_on_readthedocs">Create new project on readthedocs:</a></li>
+        
+            <li><a class="toctree-l4" href="#project_settings">Project Settings</a></li>
+        
+            <li><a class="toctree-l4" href="#trigger_a_build">Trigger a build</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#check_out_your_website">Check out your website</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#add_badge_to_your_repo">Add Badge to your Repo</a></li>
+        
+            <li><a class="toctree-l4" href="#website">Website</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../source/">gdocs2markdown</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../source/">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Github_Tutorials &raquo;</li>
+        
+      
+    
+    <li>ReadTheDocs_and_Sphinx</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><a href="https://readthedocs.org/"><span class="underline">Readthedocs.org</span></a> is a website that can be used to host documentation for python (and other languate) software packages. It uses a python package called <a href="https://pypi.org/project/Sphinx/"><span class="underline">sphinx</span></a> to automatically build in examples and documentation from your python package.</p>
+<h2 id="what_is_included_here">What is included here<a class="headerlink" href="#what_is_included_here" title="Permanent link">#</a></h2>
+<p>In this file, I will walk you through a minimum example of how to set up a documentation website that is formatted based on one theme (<a href="http://chemper.readthedocs.io/en/latest/"><span class="underline">chemper</span></a>). The read the docs website has extensive documentation and there are A TON of different themes out there. This is intended to help you understand how to get started.</p>
+<h2 id="disclaimer">Disclaimer<a class="headerlink" href="#disclaimer" title="Permanent link">#</a></h2>
+<p>Below is a step by step guide, however, there is a STEEP learning curve on Read the Docs and its not particularly intuitive. In this tutorial, we assume you already have a working python package that is installable (see docs on setup files). This is intended to be a guide that shorter and easier to follow than the official Getting Started Guide, but you will likely need to look at outside resources.</p>
+<h2 id="rst_files">RST files<a class="headerlink" href="#rst_files" title="Permanent link">#</a></h2>
+<p>Read the docs uses rst (reStructuredText) files. These are similar to MarkDown files (such as those used for GitHub README files and jupyter notebooks), in that they have formatting rules that are interpretted to change the format of the text. However, the formatting is significantly different from MarkDown. This file will not include instruction for this format, but might highlight some examples. Below is a list of links our group (Caitlin) has found useful for how to format these files.</p>
+<ul>
+<li>
+<blockquote>
+<p><a href="http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html"><span class="underline">http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html</span></a></p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p><a href="http://docutils.sourceforge.net/docs/user/rst/quickref.html"><span class="underline">http://docutils.sourceforge.net/docs/user/rst/quickref.html</span></a></p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p><a href="https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html"><span class="underline">https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html</span></a></p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p><a href="https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst"><span class="underline">https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst</span></a></p>
+</blockquote>
+</li>
+<li>
+<p>As with all languages it is usually fastest to just google what you want to do and follow the relevant discussion board answers</p>
+</li>
+</ul>
+<h1 id="building_doc_files_locally">Building Doc Files Locally<a class="headerlink" href="#building_doc_files_locally" title="Permanent link">#</a></h1>
+<p>We will start on your computer, get some initial files set up before linking the website to your github repository.</p>
+<h2 id="download_sphinx_and_run_quickstart">Download Sphinx and run quickstart<a class="headerlink" href="#download_sphinx_and_run_quickstart" title="Permanent link">#</a></h2>
+<ul>
+<li>
+<blockquote>
+<p><span class="underline">Install Sphinx</span></p>
+</blockquote>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pip install sphinx sphinx-autobuild sphinx_rtd_theme nbsphinx</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<blockquote>
+<p><span class="underline">Make a docs directory</span> to store files</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>From inside the docs folder <span class="underline">call sphinx-quickstart</span>. Note that there are a ton of questions with this call, most of them we use the default, but I will put the full list below <strong>bolding</strong> the ones where I did not chose the default.</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>A side note, the last question is “Create Windows command file? (y/n) [y]: n” I was taught at MolSSI to say “n” to this and I don’t know anyone on a windows computer to have used this program. You may need these files if you’re going to check your build on a windows machine, I don’t know.</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>When done with this call you’ll have a source/ and build/ directory in the docs directory, DO NOT add the build/ directory to your github, it is only there so you can see your output locally.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+<tbody>
+<tr class="odd">
+<td><p>(chemper_both) gitHub/shapes2 (docs)$ sphinx-quickstart</p>
+<p>Welcome to the Sphinx 1.7.6 quickstart utility.</p>
+<p>Please enter values for the following settings (just press Enter to</p>
+<p>accept a default value, if one is given in brackets).</p>
+<p>Selected root path: .</p>
+<p>You have two options for placing the build directory for Sphinx output.</p>
+<p>Either, you use a directory &quot;_build&quot; within the root path, or you separate</p>
+<p>&quot;source&quot; and &quot;build&quot; directories within the root path.</p>
+<p><strong>&gt; Separate source and build directories (y/n) [n]: y</strong></p>
+<p>Inside the root directory, two more directories will be created; &quot;_templates&quot;</p>
+<p>for custom HTML templates and &quot;_static&quot; for custom stylesheets and other static</p>
+<p>files. You can enter another prefix (such as &quot;.&quot;) to replace the underscore.</p>
+<p>&gt; Name prefix for templates and static dir [_]:</p>
+<p>The project name will occur in several places in the built documentation.</p>
+<p><strong>&gt; Project name: shapes</strong></p>
+<p><strong>&gt; Author name(s): Caitlin C. Bannan</strong></p>
+<p><strong>&gt; Project release []: 0.1</strong></p>
+<p>If the documents are to be written in a language other than English,</p>
+<p>you can select a language here by its language code. Sphinx will then</p>
+<p>translate text that it generates into that language.</p>
+<p>For a list of supported codes, see</p>
+<p>http://sphinx-doc.org/config.html#confval-language.</p>
+<p>&gt; Project language [en]:</p>
+<p>The file name suffix for source files. Commonly, this is either &quot;.txt&quot;</p>
+<p>or &quot;.rst&quot;. Only files with this suffix are considered documents.</p>
+<p>&gt; Source file suffix [.rst]:</p>
+<p>One document is special in that it is considered the top node of the</p>
+<p>&quot;contents tree&quot;, that is, it is the root of the hierarchical structure</p>
+<p>of the documents. Normally, this is &quot;index&quot;, but if your &quot;index&quot;</p>
+<p>document is a custom template, you can also set this to another filename.</p>
+<p>&gt; Name of your master document (without suffix) [index]:</p>
+<p>Sphinx can also add configuration for epub output:</p>
+<p>&gt; Do you want to use the epub builder (y/n) [n]:</p>
+<p>Indicate which of the following Sphinx extensions should be enabled:</p>
+<p><strong>&gt; autodoc: automatically insert docstrings from modules (y/n) [n]: y</strong></p>
+<p>&gt; doctest: automatically test code snippets in doctest blocks (y/n) [n]:</p>
+<p>&gt; intersphinx: link between Sphinx documentation of different projects (y/n) [n]:</p>
+<p>&gt; todo: write &quot;todo&quot; entries that can be shown or hidden on build (y/n) [n]:</p>
+<p>&gt; coverage: checks for documentation coverage (y/n) [n]:</p>
+<p>&gt; imgmath: include math, rendered as PNG or SVG images (y/n) [n]:</p>
+<p><strong>&gt; mathjax: include math, rendered in the browser by MathJax (y/n) [n]: y</strong></p>
+<p>&gt; ifconfig: conditional inclusion of content based on config values (y/n) [n]:</p>
+<p><strong>&gt; viewcode: include links to the source code of documented Python objects (y/n) [n]: y</strong></p>
+<p>&gt; githubpages: create .nojekyll file to publish the document on GitHub pages (y/n) [n]:</p>
+<p>A Makefile and a Windows command file can be generated for you so that you</p>
+<p>only have to run e.g. make html instead of invoking sphinx-build</p>
+<p>directly.</p>
+<p>&gt; Create Makefile? (y/n) [y]:</p>
+<p><strong>&gt; Create Windows command file? (y/n) [y]: n</strong></p>
+<p>Creating file ./source/conf.py.</p>
+<p>Creating file ./source/index.rst.</p>
+<p>Creating file ./Makefile.</p>
+<p>Finished: An initial directory structure has been created.</p>
+<p>You should now populate your master file ./source/index.rst and create other documentation</p>
+<p>source files. Use the Makefile to build the docs, like so:</p>
+<p>make builder</p>
+<p>where &quot;builder&quot; is one of the supported builders, e.g. html, latex or linkcheck.</p></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="edit_source_files">Edit Source Files<a class="headerlink" href="#edit_source_files" title="Permanent link">#</a></h2>
+<p>In this section, I will give instructions for how to make a minimum set of rst files so you can see how it works. If you want to look at source code for other websites, I recommend the following projects, which all have links at the top for “Edit on GitHub” that let you see the rst file source.</p>
+<ul>
+<li>
+<blockquote>
+<p>Chemper: <a href="http://chemper.readthedocs.io/en/latest/"><span class="underline">http://chemper.readthedocs.io/en/latest/</span></a></p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Openforcefield: <a href="http://open-forcefield-toolkit.readthedocs.io/en/latest/installation.html"><span class="underline">http://open-forcefield-toolkit.readthedocs.io/en/latest/installation.html</span></a></p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>The link for these source files says “Source” in the menu bar at the top</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<blockquote>
+<p>50 Examples for Teaching Python: <a href="http://fiftyexamples.readthedocs.io/en/latest/index.html"><span class="underline">http://fiftyexamples.readthedocs.io/en/latest/index.html</span></a></p>
+</blockquote>
+</li>
+</ul>
+<p>In the rest of this section I will tell you where these files should be and what to put in them to get this example working.</p>
+<h3 id="indexrst">index.rst<a class="headerlink" href="#indexrst" title="Permanent link">#</a></h3>
+<p>This file by default is in the source file, however, if your build is going to see all your code you should move it up to your top directory file. Initially your file should look something like this:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><p>.. shapes2 documentation master file, created by</p>
+<p>sphinx-quickstart on Fri Jul 20 17:51:08 2018.</p>
+<p>You can adapt this file completely to your liking, but it should at least</p>
+<p>contain the root `toctree` directive.</p>
+<p>Welcome to shapes2's documentation!</p>
+<p>===================================</p>
+<p>.. toctree::</p>
+<p>:maxdepth: 2</p>
+<p>:caption: Contents:</p>
+<p>Indices and tables</p>
+<p>==================</p>
+<p>* :ref:`genindex`</p>
+<p>* :ref:`modindex`</p>
+<p>* :ref:`search`</p></td>
+</tr>
+</tbody>
+</table>
+
+<p>We are going to make 3 more rst files, you should put their names in the table of contents tree (toctree) by putting their names under the caption, indented like this:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><p>.. toctree::</p>
+<p>:maxdepth: 2</p>
+<p>:caption: Contents:</p>
+<p>docs/source/intro</p>
+<p>docs/source/functions</p>
+<p>docs/source/examples</p></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="introrst">intro.rst<a class="headerlink" href="#introrst" title="Permanent link">#</a></h3>
+<p>In docs/source make a file called <strong>intro.rst</strong>, mine has this:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><p>Introduction</p>
+<p>============</p>
+<p>Write an introduction here</p>
+<p>Contributors</p>
+<p>------------</p>
+<p>* `Caitlin C. Bannan (UCI) &lt;https://github.com/bannanc&gt;`_</p></td>
+</tr>
+</tbody>
+</table>
+
+<p>Here’s some new formatting:</p>
+<ul>
+<li>
+<blockquote>
+<p>\==== under a line make a Title</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>----- under makes a subtitle</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>The ` ` with \&lt;> around a link followed by _ will put in an extral link so that line will look like:</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p><a href="https://github.com/bannanc"><span class="underline">Caitlin C. Bannan (UCI)</span></a></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="functionrst">function.rst<a class="headerlink" href="#functionrst" title="Permanent link">#</a></h3>
+<p>This file will use Sphinx’s auto fill to fill in a custom function or class. Mine looks like this:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><p>Functions</p>
+<p>=========</p>
+<p>Functions are separated by shape and calculation. To see an example of them in action checkout :ref:`examples`</p>
+<p>Square</p>
+<p>------</p>
+<p>.. autofunction:: shapes.square.area.area_square</p>
+<p>.. autofunction:: shapes.square.perimeter.perimeter_square</p>
+<p>Triangle</p>
+<p>--------</p>
+<p>.. autofunction:: shapes.triangle.area.area_triangle</p></td>
+</tr>
+</tbody>
+</table>
+
+<p>In this implementation it assumes you’re using the Google stype doc strings, such as the one shown below. If you want to use a different doc style you will have to look up how to change your conf.py file.:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><p>def area_square(length):</p>
+<p>&quot;&quot;&quot;</p>
+<p>Calculates the area of a square.</p>
+<p>Parameters</p>
+<p>----------</p>
+<p>length (float or int) length of one side of a square</p>
+<p>Returns</p>
+<p>-------</p>
+<p>area (float) - area of the square</p>
+<p>&quot;&quot;&quot;</p>
+<p>return length ** 2</p></td>
+</tr>
+</tbody>
+</table>
+
+<p>This will automatically grab the functions shapes.square… etc. You can also do this with classes, and it will show all classes and their doc strings. Here is the area_square output on our website:</p>
+<p><img alt="" src="../media/image8.png" /></p>
+<h3 id="examplesrst">examples.rst<a class="headerlink" href="#examplesrst" title="Permanent link">#</a></h3>
+<p>This file will allow you to show example jupyter notebooks you’ve created on your documentation website. This handy as your user can see a complicated use example that they can also download and play with from github if they want to.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><p>.. _examples:</p>
+<p>Examples</p>
+<p>========</p>
+<p>Below are links to examples for inputing jupyter notebooks into your website</p>
+<p>.. toctree::</p>
+<p>:maxdepth: 1</p>
+<p>../examples/example_notebook.ipynb</p></td>
+</tr>
+</tbody>
+</table>
+
+<p>You can list multiple notebooks, just like the toctree in intro.rst, you can also include these in any toctree in any file you choose.</p>
+<h2 id="edit_configuration_files">Edit Configuration Files<a class="headerlink" href="#edit_configuration_files" title="Permanent link">#</a></h2>
+<p>Now we will change the files which are used to build your website pages</p>
+<h3 id="makefile">Makefile<a class="headerlink" href="#makefile" title="Permanent link">#</a></h3>
+<p>This file is located in the docs folder, not in source. We moved the index file up to the top directory so sphinx could find all your code and jupyter notebooks. However, we need to tell the Makefile that. Note, I don’t know anything else about this file, it is possible there are fancier things you can do witht he Makefile, but I’ve always just used the default besides this one change, on line 8 ish, change the SOURCEDIR variable:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SOURCEDIR = ../</td>
+</tr>
+</tbody>
+</table>
+<h3 id="confpy">conf.py<a class="headerlink" href="#confpy" title="Permanent link">#</a></h3>
+<p>These are suggested changes for the conf file, it was originally at sources/conf.py, but it also needs to be moved to the top directory.</p>
+<p>Remember, that these are all just suggestions to make the format used in chemper, this file is very customizeable so you may end up needing to change other things. I also don’t understand this well enough to justify all of these decisions.</p>
+<p>So All I’m going to show what to change:</p>
+<ul>
+<li>
+<blockquote>
+<p>uncomment out import os</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>approx line 15</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<blockquote>
+<p>update the extensions list to include all of the following:</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>about line 41</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+<tbody>
+<tr class="odd">
+<td><p>extensions = [</p>
+<p>'sphinx.ext.autodoc',</p>
+<p>'sphinx.ext.autosummary',</p>
+<p>'sphinx.ext.mathjax',</p>
+<p>'sphinx.ext.viewcode',</p>
+<p>'sphinx.ext.napoleon',</p>
+<p>'sphinx.ext.intersphinx'</p>
+<p>'nbsphinx',</p>
+<p>]</p></td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>
+<blockquote>
+<p>Set the exclude_patterns as below:</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>about line 73</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exclude_patterns = ['_build', '**.ipynb_checkpoints']</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<blockquote>
+<p>Comment out the line html_theme = 'alabaster' and add this below it:</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>about line 83</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+<tbody>
+<tr class="odd">
+<td><p><em># html_theme = 'alabaster'</em></p>
+<p>on_rtd = os.environ.get('READTHEDOCS', None) == 'True'</p>
+<p>if not on_rtd: <em># only import and set the theme if we're building docs locally</em></p>
+<p>import sphinx_rtd_theme</p>
+<p>html_theme = 'sphinx_rtd_theme'</p>
+<p>html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]</p>
+<p>html_context = {</p>
+<p>'css_files': [</p>
+<p>'_static/theme_overrides.css'</p>
+<p>]</p>
+<p>}</p>
+<p>else:</p>
+<p>html_context = {</p>
+<p>'css_files': [</p>
+<p>'//media.readthedocs.org/css/sphinx_rtd_theme.css',</p>
+<p>'//media.readthedocs.org/css/readthedocs-doc-embed.css',</p>
+<p>'_static/theme_overrides.css'</p>
+<p>]</p>
+<p>}</p></td>
+</tr>
+</tbody>
+</table>
+
+<ul>
+<li>
+<blockquote>
+<p>update html_sidebars to the following</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>about line 126</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>This I can explain, these are things I did not want included in the side bar of my home website, you can play around with these to see if you want them included or not.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+<tbody>
+<tr class="odd">
+<td><p>html_sidebars = {</p>
+<p>'**': [</p>
+<p>'about.html',</p>
+<p>'navigation.html',</p>
+<p>'relations.html', # needs 'show_related': True theme option to display</p>
+<p>'searchbox.html',</p>
+<p># 'donate.html', see if I actually need this one</p>
+<p>]</p>
+<p>}</p></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="environmentyml">environment.yml<a class="headerlink" href="#environmentyml" title="Permanent link">#</a></h3>
+<p>This is a yml file similar, but simpler than the travis yml file. It tells sphinx/readthedocs which python modules you need to install. Here is what is in my simple example, you’ll need all dependencies for your package. (Side note - technically my example tool doesn’t use openeye, but I wanted an example that included the channels being required. This can also be a list like the dependencies section, just include any conda channel necessary for your dependencies).</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><p>name: chemper</p>
+<p>channels:</p>
+<p>- openeye</p>
+<p>dependencies:</p>
+<p>- python==3.5</p>
+<p>- openeye-toolkits</p>
+<p>- numpydoc</p>
+<p>- pip</p>
+<p>- pip:</p>
+<p>- nbsphinx</p></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="readthedocsyml">.readthedocs.yml<a class="headerlink" href="#readthedocsyml" title="Permanent link">#</a></h3>
+<p>This file is in the top directory and tells readthedocs to use conda to install your python environment. It is very short and calls your environment file:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td><p>conda:</p>
+<p>file: docs/environment.yml</p>
+<p>python:</p>
+<p>setup_py_install: true</p>
+<p>version: 3.5</p>
+<p>extra_requirements:</p>
+<p>- tests</p>
+<p>- docs</p></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="check_your_build">Check your build<a class="headerlink" href="#check_your_build" title="Permanent link">#</a></h2>
+<p>In the directory with your MakeFile run the following command:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>make html</td>
+</tr>
+</tbody>
+</table>
+<p>To see your build open the file build/html/index.html, this is not a public website yet, but you should be able to use all of your links.</p>
+<h2 id="push_all_these_files_to_github">Push all these files to GitHub<a class="headerlink" href="#push_all_these_files_to_github" title="Permanent link">#</a></h2>
+<p>Next you want to add all of these files to a branch in your github repository (this can be master, but below I include directions for how to see the build on other branches as well).</p>
+<h1 id="set_up_readthedocs">Set Up ReadTheDocs<a class="headerlink" href="#set_up_readthedocs" title="Permanent link">#</a></h1>
+<p>If you don’t own your repository, you’ll need to ask the owner (or organization admin) to give you permission in order to do these steps. As in they have to give your username permission, though if you’re on a group project you should all agree on who is creatting the doc website.</p>
+<h3 id="setup_account">Setup account<a class="headerlink" href="#setup_account" title="Permanent link">#</a></h3>
+<p>Go to <a href="https://readthedocs.org/"><span class="underline">readthedocs.io</span></a> and log in through github, its been a while since I did this for the first time, but I think you just say log in with github and then check a box giving it permission to access your repositories.</p>
+<h2 id="create_new_project_on_readthedocs">Create new project on readthedocs:<a class="headerlink" href="#create_new_project_on_readthedocs" title="Permanent link">#</a></h2>
+<ul>
+<li>
+<blockquote>
+<p>Chose import a project</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p><img alt="" src="../media/image5.png" /></p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>Find the repository you want to make a documentation page for and click on the “</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p><img alt="" src="../media/image3.png" /></p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>Assign a name and chose repository type “Git”<img alt="" src="../media/image2.png" /></p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>Note this name has to be unique, that is there can’t be any other readthedocs projects with this name, it is used for your [project].readthedocs.io website. If your project name is available use thate, but if note you may have to come up with a variation</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Note - For most projects the default advanced options should be fine, but they include options to add a description or a link to the projects home page and tags for your documentation. I believe these can be accessed again after creation, but I’ve never used anything except the defaults.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="project_settings">Project Settings<a class="headerlink" href="#project_settings" title="Permanent link">#</a></h2>
+<p>Now we will make some small adjustments to make sure your documents are building. You can do this under Admin on the menu bar:</p>
+<p><img alt="" src="../media/image4.png" /></p>
+<p>In the sections below, I have descriptions for the things you might want to change. These will not be written in order, but include the important options on the side bar:</p>
+<p><img alt="" src="../media/image6.png" /></p>
+<h3 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">#</a></h3>
+<p>In this section you can change the “advanced” settings we ignored when initially building the project, however, there shouldn’t be anything you HAVE to change here.</p>
+<h3 id="versions">Versions<a class="headerlink" href="#versions" title="Permanent link">#</a></h3>
+<p>On this menu you can chose which branchs from your project you want to have documentation built for. This is handy for testing your documentation before pushing it into the master branch. So you should select active next under that branch name:</p>
+<p><img alt="" src="../media/image1.png" /></p>
+<p>Then you can chose if you want it to be public, there are also protected and private builds, but I’m not sure who can(not) see the other options…</p>
+<h2 id="trigger_a_build">Trigger a build<a class="headerlink" href="#trigger_a_build" title="Permanent link">#</a></h2>
+<p>You can force a new build on your project by going to “Builds” on the main menu and pressing the “Build Version” button.</p>
+<h1 id="check_out_your_website">Check out your website<a class="headerlink" href="#check_out_your_website" title="Permanent link">#</a></h1>
+<h2 id="add_badge_to_your_repo">Add Badge to your Repo<img alt="" src="../media/image7.png" /><a class="headerlink" href="#add_badge_to_your_repo" title="Permanent link">#</a></h2>
+<p>Like Travis and CodeCov, ReadTheDocs has a badge you can add to your repository.</p>
+<p>On the homepage of the read the docs for your project on the right side you should see this:</p>
+<p>If you click on the badge itself, there are options for RST, MarkDown, or HTML that will allow you to add this badge to your repo.</p>
+<h2 id="website">Website<a class="headerlink" href="#website" title="Permanent link">#</a></h2>
+<p>The website for your docs uses the name you created during setup in the form [name].readthedocs.io</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../Integrated_Testing/" class="btn btn-neutral" title="Integrated_Testing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Integrated_Testing/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

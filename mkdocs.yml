@@ -1,0 +1,28 @@
+site_name: gdocs2markdown
+theme: readthedocs
+nav:
+- Home: source/index.md
+- Coding_Tutorials:
+  - README: Coding_Tutorials/README.md
+  - Anaconda: Coding_Tutorials/Anaconda.md
+  - IDE: Coding_Tutorials/IDE.md
+  - Jupyter_Notebooks: Coding_Tutorials/Jupyter_Notebooks.md
+  - MarkDown: Coding_Tutorials/MarkDown.md
+- Github_Tutorials:
+  - README: GitHub_Tutorials/README.md
+  - Code_Coverage: GitHub_Tutorials/Code_Coverage.md
+  - Encrypting_on_Travis: GitHub_Tutorials/Encrypting_on_Travis.md
+  - Cloning: GitHub_Tutorials/GitHub_Cloning.md
+  - Creating_a_Repository: GitHub_Tutorials/GitHub_Creating_a_Repository.md
+  - Forking: GitHub_Tutorials/GitHub_Forking.md
+  - Getting_Started: GitHub_Tutorials/GitHub_Getting_Started.md
+  - Issues: GitHub_Tutorials/GitHub_Issues.md
+  - Pull_Requests: GitHub_Tutorials/GitHub_Pull_Requests.md
+  - Working_Locally: GitHub_Tutorials/GitHub_Working_Locally.md
+  - Integrated_Testing: GitHub_Tutorials/Integrated_Testing.md
+  - ReadTheDocs_and_Sphinx: GitHub_Tutorials/ReadTheDocs_and_Sphinx.md
+markdown_extensions:
+  - toc:
+      permalink: "#"
+      baselevel: 1
+      separator: "_"
