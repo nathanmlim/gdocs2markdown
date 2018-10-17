@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Encrypting_on_Travis - gdocs2markdown</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Encrypting_on_Travis";
+    var mkdocs_page_input_path = "GitHub_Tutorials/Encrypting_on_Travis.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../source/" class="icon icon-home"> gdocs2markdown</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../source/">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Coding_Tutorials</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Coding_Tutorials/">README</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Coding_Tutorials/Anaconda/">Anaconda</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Coding_Tutorials/IDE/">IDE</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Coding_Tutorials/Jupyter_Notebooks/">Jupyter_Notebooks</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Coding_Tutorials/MarkDown/">MarkDown</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Github_Tutorials</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../">README</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Code_Coverage/">Code_Coverage</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Encrypting_on_Travis</a>
+    <ul class="subnav">
+            
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Cloning/">Cloning</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Creating_a_Repository/">Creating_a_Repository</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Forking/">Forking</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Getting_Started/">Getting_Started</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Issues/">Issues</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Pull_Requests/">Pull_Requests</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../GitHub_Working_Locally/">Working_Locally</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Integrated_Testing/">Integrated_Testing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../ReadTheDocs_and_Sphinx/">ReadTheDocs_and_Sphinx</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../source/">gdocs2markdown</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../source/">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Github_Tutorials &raquo;</li>
+        
+      
+    
+    <li>Encrypting_on_Travis</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>I’ll put this in the github help google drive eventually</p>
+<p>Upgrading ruby:</p>
+<p><span class="underline">https://stackoverflow.com/questions/38194032/how-to-update-ruby-version-2-0-0-to-the-latest-version-in-mac-osx-yosemite</span></p>
+<ul>
+<li>
+<blockquote>
+<p>If you don’t already have curl:</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>sudo apt-get update</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>sudo apt install curl</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<blockquote>
+<p>\curl -sSL <a href="https://get.rvm.io/"><span class="underline">https://get.rvm.io</span></a> | bash -s stable</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>source \~/.bash_profile</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>rvm list known</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>long list of possible ruby installations</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<blockquote>
+<p>rvm install ruby-2.4.2</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>long list about what is being installed/configured</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<blockquote>
+<p>ruby -v</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>ruby 2.4.2p198 (2017-09-14 revision 59899) [x86_64-darwin16]</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<blockquote>
+<p>sudo gem install travis</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>Fetching and successfully installing a bunch of stuff</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>shoot, I forgot about the extra options, uninstalled</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>sudo gem uninstall travis</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<blockquote>
+<p>VTL had gem not found so had to: sudo apt-get install rubygems (<span class="underline">source</span>)</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>sudo gem install travis -v 1.8.8 --no-rdoc --no-ri</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>Fetching: travis-1.8.8.gem (100%)</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>Successfully installed travis-1.8.8</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>1 gem installed</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>MUCH shorter than the first time…</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>VTL got error: ERROR: Error installing travis: ERROR: Failed to build gem native extension.</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>Solved with “sudo apt-get install ruby-dev” beforehand</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<blockquote>
+<p>If you forget the options of --no-rdoc and --no-ri you can remove this manually with “sudo rm -rf `gem env gemdir`/doc”</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<blockquote>
+<p>travis version</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>1.8.8</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>VTL got error: Traceback (most recent call last):</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>2: from /usr/local/bin/travis:23:in `\&lt;main>'</p>
+<p>1: from /usr/lib/ruby/2.5.0/rubygems.rb:308:in `activate_bin_path'</p>
+<p>/usr/lib/ruby/2.5.0/rubygems.rb:289:in `find_spec_for_exe': can't find gem travis (>= 0.a) with executable travis (Gem::GemNotFoundException)</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>But it seemed the installer needed to finish when I tried this command again in a NEW terminal.</p>
+</blockquote>
+</li>
+</ul>
+<!-- end list -->
+
+<ul>
+<li>
+<blockquote>
+<p>travis login --auto</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>Successfully logged in as bannanc!</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<blockquote>
+<p>cp \~/anaconda3/licenses/oe_license.txt .</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>travis encrypt-file oe_license.txt</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>Note, if you’ve changed names at any point you might have set the repository with the -R option, for example</p>
+</blockquote>
+<ul>
+<li>
+<blockquote>
+<p>travis encrypt-file oe_license.txt -R MobleyLab/chemper</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<blockquote>
+<p>Run this command <em>inside</em> the git repository.</p>
+</blockquote>
+</li>
+<li>
+<blockquote>
+<p>VTL decided to not add the --add command and chose to update .travis.yml file manually. The automatic addition removes commented descriptions in the existing .travis.yml file.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<p>Detected repository as MobleyLab/off_nitrogens, is this correct? |yes|</p>
+<p>encrypting oe_license.txt for MobleyLab/off_nitrogens</p>
+<p>storing result as oe_license.txt.enc</p>
+<p>storing secure env variables for decryption</p>
+<p>Please add the following to your build script (before_install stage in your .travis.yml, for instance):</p>
+<p>openssl aes-256-cbc -K $encrypted_ff9126da2177_key -iv $encrypted_ff9126da2177_iv -in oe_license.txt.enc -out oe_license.txt -d</p>
+<p>Pro Tip: You can add it automatically by running with --add.</p>
+<p>Make sure to add oe_license.txt.enc to the git repository.</p>
+<p>Make sure not to add oe_license.txt to the git repository.</p>
+<p>Commit all changes to your .travis.yml</p>
+<p>When things don’t work try adding the options —debug and —explode to the encrypt line so the first command would be</p>
+<p>travis encrypt-file oe_license.txt -R MobleyLab/chemper --debug --explode</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../GitHub_Cloning/" class="btn btn-neutral float-right" title="Cloning">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Code_Coverage/" class="btn btn-neutral" title="Code_Coverage"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Code_Coverage/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../GitHub_Cloning/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
