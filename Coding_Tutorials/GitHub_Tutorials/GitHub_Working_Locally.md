@@ -29,7 +29,7 @@ Even if it's not a shared project, I suggest different branches for your differe
 
 > <img src="./media/image8.png" style="width:6.5in;height:3.55556in" />
 
-- Now instead of pushing to the master branch, when you're ready to add your changes to the master branch you should go to the github website and create a [**[pull request]{.underline}**](https://docs.google.com/document/d/1L3kE17JCd0TeBhmoE7qSsfohiG1C7A8-X0Yi7PiYFAs/edit?usp=sharing)
+- Now instead of pushing to the master branch, when you're ready to add your changes to the master branch you should go to the github website and create a [**<span class="underline">pull request</span>**](https://docs.google.com/document/d/1L3kE17JCd0TeBhmoE7qSsfohiG1C7A8-X0Yi7PiYFAs/edit?usp=sharing)
 
   - This requests that the master branch pull your changes
 

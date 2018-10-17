@@ -25,11 +25,11 @@ GitHub is a website for storing and editing code, it includes a lot of diverse f
 
 # Create A GitHub Account
 
-- Make an account on [[github.com]{.underline}](https://github.com)
+- Make an account on [<span class="underline">github.com</span>](https://github.com)
 
   - make sure to use your uci.edu e-mail
 
-- Follow this link to get the [Student Developer Pack]{.underline}
+- Follow this link to get the <span class="underline">Student Developer Pack</span>
 
   - This includes unlimited private repositories
 
@@ -39,17 +39,17 @@ GitHub is a website for storing and editing code, it includes a lot of diverse f
 
 # Syncing Your Account
 
-This section will have instructions for how to tell github your computer has permission to make changes on your account, you can do this for multiple computers and your green planet account. For now follow the instructions here: [[https://help.github.com/articles/connecting-to-github-with-ssh/]{.underline}](https://help.github.com/articles/connecting-to-github-with-ssh/)
+This section will have instructions for how to tell github your computer has permission to make changes on your account, you can do this for multiple computers and your green planet account. For now follow the instructions here: [<span class="underline">https://help.github.com/articles/connecting-to-github-with-ssh/</span>](https://help.github.com/articles/connecting-to-github-with-ssh/)
 
 # Where do I go Next
 
-This directory includes documentation from the group. It is mained by the current [[github/infrastructure training person]{.underline}](https://docs.google.com/document/d/1Eg8RrzOkVbDpDjGlE6ttzCz8QpbMo_QFfazVoXa1hhU/edit?usp=sharing) (currently Caitlin). If you have questions about anything posted here talk to them. Feel free to update any of the writing if you find it to be more clear.
+This directory includes documentation from the group. It is mained by the current [<span class="underline">github/infrastructure training person</span>](https://docs.google.com/document/d/1Eg8RrzOkVbDpDjGlE6ttzCz8QpbMo_QFfazVoXa1hhU/edit?usp=sharing) (currently Caitlin). If you have questions about anything posted here talk to them. Feel free to update any of the writing if you find it to be more clear.
 
 Your next step depends on how you're going to start using Github:
 
-- If you're joining an existing project or one of the older graduate students already made a repository, check out [[Cloning a Repository]{.underline}](https://docs.google.com/document/d/1kXob_nXz-LxOyJcHq-zgJnskma10SPXm7YCy1dhujq0/edit?usp=sharing) and then [[Working in your repository]{.underline}](https://docs.google.com/document/d/1Ivk_IHnZd862YWdlppmqpU_0VRKY9FbbAOZ-XNC-TN8/edit?usp=sharing)
+- If you're joining an existing project or one of the older graduate students already made a repository, check out [<span class="underline">Cloning a Repository</span>](https://docs.google.com/document/d/1kXob_nXz-LxOyJcHq-zgJnskma10SPXm7YCy1dhujq0/edit?usp=sharing) and then [<span class="underline">Working in your repository</span>](https://docs.google.com/document/d/1Ivk_IHnZd862YWdlppmqpU_0VRKY9FbbAOZ-XNC-TN8/edit?usp=sharing)
 
-- If you are starting a new project, you'll need to [[Create a New Repository]{.underline}](https://docs.google.com/document/d/1ggRCqv0VcuQnd6Ct_icz6L5P_2XNL3DxNolfG3CppC0/edit?usp=sharing)
+- If you are starting a new project, you'll need to [<span class="underline">Create a New Repository</span>](https://docs.google.com/document/d/1ggRCqv0VcuQnd6Ct_icz6L5P_2XNL3DxNolfG3CppC0/edit?usp=sharing)
 
 # Outside Resources
 

@@ -68,4 +68,4 @@ If your branch is out of date with the mast you will receive a warning that the 
 
 <img src="./media/image2.png" style="width:6.5in;height:1.375in" />
 
-You will need to pull the master branch into your local branch and resolve any conflicts. See the [[Update your Local Repository Section of Working Locally]{.underline}](https://docs.google.com/document/d/1Ivk_IHnZd862YWdlppmqpU_0VRKY9FbbAOZ-XNC-TN8/edit?usp=sharing) for details
+You will need to pull the master branch into your local branch and resolve any conflicts. See the [<span class="underline">Update your Local Repository Section of Working Locally</span>](https://docs.google.com/document/d/1Ivk_IHnZd862YWdlppmqpU_0VRKY9FbbAOZ-XNC-TN8/edit?usp=sharing) for details

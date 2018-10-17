@@ -72,8 +72,8 @@ After clicking a new repository, you have the option of including a few default 
 
 - Click "create repository\" when you're ready (This will open your repository)
 
-- [**[Clone your repository]{.underline}**](https://docs.google.com/document/d/1kXob_nXz-LxOyJcHq-zgJnskma10SPXm7YCy1dhujq0/edit?usp=sharing) to your terminal so you can add files and start working
+- [**<span class="underline">Clone your repository</span>**](https://docs.google.com/document/d/1kXob_nXz-LxOyJcHq-zgJnskma10SPXm7YCy1dhujq0/edit?usp=sharing) to your terminal so you can add files and start working
 
 ## Completely Empty Repository
 
-In this scenario you basically say no initializing a README or including a .gitignore or license file. When you click "Create repository" github will give you instructions for how to initialize files in your git repository from a directory in your terminal. Note, that you MUST have a license file in order for other people to use your code and .gitignore files are extremely useful so unless your local directory already has these items, I recommend initializing these files and then moving anything you want in the repository into your folder after [**[cloning your repository]{.underline}**](https://docs.google.com/document/d/1kXob_nXz-LxOyJcHq-zgJnskma10SPXm7YCy1dhujq0/edit?usp=sharing).
+In this scenario you basically say no initializing a README or including a .gitignore or license file. When you click "Create repository" github will give you instructions for how to initialize files in your git repository from a directory in your terminal. Note, that you MUST have a license file in order for other people to use your code and .gitignore files are extremely useful so unless your local directory already has these items, I recommend initializing these files and then moving anything you want in the repository into your folder after [**<span class="underline">cloning your repository</span>**](https://docs.google.com/document/d/1kXob_nXz-LxOyJcHq-zgJnskma10SPXm7YCy1dhujq0/edit?usp=sharing).

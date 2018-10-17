@@ -26,11 +26,11 @@
   - [Add Badge to your Repo<img src="./media/image7.png" style="width:1.7541in;height:2.81771in" />](#add-badge-to-your-repo)
   - [Website](#website)
 
-[[Readthedocs.org]{.underline}](https://readthedocs.org/) is a website that can be used to host documentation for python (and other languate) software packages. It uses a python package called [[sphinx]{.underline}](https://pypi.org/project/Sphinx/) to automatically build in examples and documentation from your python package.
+[<span class="underline">Readthedocs.org</span>](https://readthedocs.org/) is a website that can be used to host documentation for python (and other languate) software packages. It uses a python package called [<span class="underline">sphinx</span>](https://pypi.org/project/Sphinx/) to automatically build in examples and documentation from your python package.
 
 ## What is included here
 
-In this file, I will walk you through a minimum example of how to set up a documentation website that is formatted based on one theme ([[chemper]{.underline}](http://chemper.readthedocs.io/en/latest/)). The read the docs website has extensive documentation and there are A TON of different themes out there. This is intended to help you understand how to get started.
+In this file, I will walk you through a minimum example of how to set up a documentation website that is formatted based on one theme ([<span class="underline">chemper</span>](http://chemper.readthedocs.io/en/latest/)). The read the docs website has extensive documentation and there are A TON of different themes out there. This is intended to help you understand how to get started.
 
 ## Disclaimer
 
@@ -40,13 +40,13 @@ Below is a step by step guide, however, there is a STEEP learning curve on Read 
 
 Read the docs uses rst (reStructuredText) files. These are similar to MarkDown files (such as those used for GitHub README files and jupyter notebooks), in that they have formatting rules that are interpretted to change the format of the text. However, the formatting is significantly different from MarkDown. This file will not include instruction for this format, but might highlight some examples. Below is a list of links our group (Caitlin) has found useful for how to format these files.
 
-- [[http://openalea.gforge.inria.fr/doc/openalea/doc/\_build/html/source/sphinx/rest\_syntax.html]{.underline}](http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html)
+- [<span class="underline">http://openalea.gforge.inria.fr/doc/openalea/doc/\_build/html/source/sphinx/rest\_syntax.html</span>](http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html)
 
-- [[http://docutils.sourceforge.net/docs/user/rst/quickref.html]{.underline}](http://docutils.sourceforge.net/docs/user/rst/quickref.html)
+- [<span class="underline">http://docutils.sourceforge.net/docs/user/rst/quickref.html</span>](http://docutils.sourceforge.net/docs/user/rst/quickref.html)
 
-- [[https://thomas-cokelaer.info/tutorials/sphinx/rest\_syntax.html]{.underline}](https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html)
+- [<span class="underline">https://thomas-cokelaer.info/tutorials/sphinx/rest\_syntax.html</span>](https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html)
 
-- [[https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst]{.underline}](https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst)
+- [<span class="underline">https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst</span>](https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst)
 
 - 
 
@@ -58,15 +58,15 @@ We will start on your computer, get some initial files set up before linking the
 
 ## Download Sphinx and run quickstart
 
-- [Install Sphinx]{.underline}
+- <span class="underline">Install Sphinx</span>
 
 |                                                                 |
 |-----------------------------------------------------------------|
 | pip install sphinx sphinx-autobuild sphinx\_rtd\_theme nbsphinx |
 
-- [Make a docs directory]{.underline} to store files
+- <span class="underline">Make a docs directory</span> to store files
 
-- From inside the docs folder [call sphinx-quickstart]{.underline}. Note that there are a ton of questions with this call, most of them we use the default, but I will put the full list below **bolding** the ones where I did not chose the default.
+- From inside the docs folder <span class="underline">call sphinx-quickstart</span>. Note that there are a ton of questions with this call, most of them we use the default, but I will put the full list below **bolding** the ones where I did not chose the default.
 
   - A side note, the last question is "Create Windows command file? (y/n) \[y\]: n" I was taught at MolSSI to say "n" to this and I don't know anyone on a windows computer to have used this program. You may need these files if you're going to check your build on a windows machine, I don't know.
 
@@ -78,13 +78,13 @@ We will start on your computer, get some initial files set up before linking the
 
 In this section, I will give instructions for how to make a minimum set of rst files so you can see how it works. If you want to look at source code for other websites, I recommend the following projects, which all have links at the top for "Edit on GitHub" that let you see the rst file source.
 
-- Chemper: [[http://chemper.readthedocs.io/en/latest/]{.underline}](http://chemper.readthedocs.io/en/latest/)
+- Chemper: [<span class="underline">http://chemper.readthedocs.io/en/latest/</span>](http://chemper.readthedocs.io/en/latest/)
 
-- Openforcefield: [[http://open-forcefield-toolkit.readthedocs.io/en/latest/installation.html]{.underline}](http://open-forcefield-toolkit.readthedocs.io/en/latest/installation.html)
+- Openforcefield: [<span class="underline">http://open-forcefield-toolkit.readthedocs.io/en/latest/installation.html</span>](http://open-forcefield-toolkit.readthedocs.io/en/latest/installation.html)
 
   - The link for these source files says "Source" in the menu bar at the top
 
-- 50 Examples for Teaching Python: [[http://fiftyexamples.readthedocs.io/en/latest/index.html]{.underline}](http://fiftyexamples.readthedocs.io/en/latest/index.html)
+- 50 Examples for Teaching Python: [<span class="underline">http://fiftyexamples.readthedocs.io/en/latest/index.html</span>](http://fiftyexamples.readthedocs.io/en/latest/index.html)
 
 In the rest of this section I will tell you where these files should be and what to put in them to get this example working.
 
@@ -112,7 +112,7 @@ Here's some new formatting:
 
 - The \` \` with &lt;&gt; around a link followed by \_ will put in an extral link so that line will look like:
 
-  - [[Caitlin C. Bannan (UCI)]{.underline}](https://github.com/bannanc)
+  - [<span class="underline">Caitlin C. Bannan (UCI)</span>](https://github.com/bannanc)
 
 ### function.rst
 
@@ -220,7 +220,7 @@ If you don't own your repository, you'll need to ask the owner (or organization 
 
 ### Setup account
 
-Go to [[readthedocs.io]{.underline}](https://readthedocs.org/) and log in through github, its been a while since I did this for the first time, but I think you just say log in with github and then check a box giving it permission to access your repositories.
+Go to [<span class="underline">readthedocs.io</span>](https://readthedocs.org/) and log in through github, its been a while since I did this for the first time, but I think you just say log in with github and then check a box giving it permission to access your repositories.
 
 ## Create new project on readthedocs:
 

@@ -14,7 +14,7 @@ Below are instructions for how to clone a repository, thats GitHub lingo for mak
 
   - Are you going to make changes to the code?
 
-    - You should check the owners development policy before you clone, you might need to [[fork it]{.underline}](https://docs.google.com/document/d/1qdRfO4hkexBoxear9YPCUxfkwz0Luv0R3F3DF9zqF-c/edit?usp=sharing).
+    - You should check the owners development policy before you clone, you might need to [<span class="underline">fork it</span>](https://docs.google.com/document/d/1qdRfO4hkexBoxear9YPCUxfkwz0Luv0R3F3DF9zqF-c/edit?usp=sharing).
 
   - You're just going to use the code and have no plans to make changes?
 
@@ -24,13 +24,13 @@ Below are instructions for how to clone a repository, thats GitHub lingo for mak
 
   - Are you going to make changes to the code?
 
-    - [[Fork It]{.underline}](https://docs.google.com/document/d/1qdRfO4hkexBoxear9YPCUxfkwz0Luv0R3F3DF9zqF-c/edit?usp=sharing)
+    - [<span class="underline">Fork It</span>](https://docs.google.com/document/d/1qdRfO4hkexBoxear9YPCUxfkwz0Luv0R3F3DF9zqF-c/edit?usp=sharing)
 
   - Not changing the code:
 
     - You don't need to fork it, but you might want to consider downloading a specific version of the code rather than cloning a repository that is in development.
 
-We have a file describing how to fork a repository [[here]{.underline}](https://docs.google.com/document/d/1qdRfO4hkexBoxear9YPCUxfkwz0Luv0R3F3DF9zqF-c/edit?usp=sharing).
+We have a file describing how to fork a repository [<span class="underline">here</span>](https://docs.google.com/document/d/1qdRfO4hkexBoxear9YPCUxfkwz0Luv0R3F3DF9zqF-c/edit?usp=sharing).
 
 # Cloning?
 
@@ -48,4 +48,4 @@ There is a button on the top of your repository's webiste for "Clone or download
 
 <img src="./media/image2.png" style="width:6.5in;height:1.29167in" />
 
-This process will create a directory with the name of your repository, you can cd into it and then start [[working locally]{.underline}](https://docs.google.com/document/d/1Ivk_IHnZd862YWdlppmqpU_0VRKY9FbbAOZ-XNC-TN8/edit?usp=sharing)
+This process will create a directory with the name of your repository, you can cd into it and then start [<span class="underline">working locally</span>](https://docs.google.com/document/d/1Ivk_IHnZd862YWdlppmqpU_0VRKY9FbbAOZ-XNC-TN8/edit?usp=sharing)

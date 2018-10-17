@@ -1,4 +1,4 @@
-[**[Forking]{.underline}**](https://help.github.com/articles/syncing-a-fork/) **a repository**
+[**<span class="underline">Forking</span>**](https://help.github.com/articles/syncing-a-fork/) **a repository**
 
 - Forks are a way of making a copy of a project to work on. They can let you 'fork' off of a project and develop separately, and are often preferred for large projects with multiple people working on them. BUT, in projects with certain types of automated testing it can be preferred to use a branch rather than a fork. Find out what is preferred for the project you are involved in.
 

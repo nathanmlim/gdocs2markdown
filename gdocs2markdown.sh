@@ -72,7 +72,7 @@ md_github_ext=(
     hard_line_breaks
     native_spans
     gfm_auto_identifiers
-    bracketed_spans
+    #bracketed_spans
     #raw_attribute
     #link_attributes
 

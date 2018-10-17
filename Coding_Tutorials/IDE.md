@@ -2,7 +2,7 @@
 
 IDE stands for integrated development environment, that is the software you use for writing code, for example vim, xcode, atom, etc. Here is a list of free options that at least one person in our group uses. Feel free to add others and why you like them.
 
-- [[VIM]{.underline}](https://www.vim.org/)
+- [<span class="underline">VIM</span>](https://www.vim.org/)
 
   - This is a very bare bones text editor environment, there are plugins you can get for autocomplete or other features.
 
@@ -10,15 +10,15 @@ IDE stands for integrated development environment, that is the software you use 
 
   - Used by Caitlin, Guilherme, Dr. Mobley, Victoria, Jessica, Nathan, Sam?
 
-  - Make sure your .vimrc file has all required settings, see Caitlin's example file on github: [[https://github.com/MobleyLab/SharedScripts/blob/master/Caitlin/vimrc]{.underline}](https://github.com/MobleyLab/SharedScripts/blob/master/Caitlin/vimrc)
+  - Make sure your .vimrc file has all required settings, see Caitlin's example file on github: [<span class="underline">https://github.com/MobleyLab/SharedScripts/blob/master/Caitlin/vimrc</span>](https://github.com/MobleyLab/SharedScripts/blob/master/Caitlin/vimrc)
 
-- [[Atom]{.underline}](https://atom.io/)
+- [<span class="underline">Atom</span>](https://atom.io/)
 
   - Open source IDE created by the github developers
 
   - Used by Dr. Mobley, Nathan,
 
-- [[PyCharm]{.underline}](https://www.jetbrains.com/pycharm/)
+- [<span class="underline">PyCharm</span>](https://www.jetbrains.com/pycharm/)
 
   - Paid and free community version, a favorite of python programmers at OpenEye where Caitlin started using it.
 

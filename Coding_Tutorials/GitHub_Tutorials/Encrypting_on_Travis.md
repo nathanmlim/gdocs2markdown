@@ -2,7 +2,7 @@ I'll put this in the github help google drive eventually
 
 Upgrading ruby:
 
-[https://stackoverflow.com/questions/38194032/how-to-update-ruby-version-2-0-0-to-the-latest-version-in-mac-osx-yosemite]{.underline}
+<span class="underline">https://stackoverflow.com/questions/38194032/how-to-update-ruby-version-2-0-0-to-the-latest-version-in-mac-osx-yosemite</span>
 
 - If you don't already have curl:
 
@@ -10,7 +10,7 @@ Upgrading ruby:
 
   - sudo apt install curl
 
-- \\curl -sSL [[https://get.rvm.io]{.underline}](https://get.rvm.io/) \| bash -s stable
+- \\curl -sSL [<span class="underline">https://get.rvm.io</span>](https://get.rvm.io/) \| bash -s stable
 
 - source \~/.bash\_profile
 
@@ -34,7 +34,7 @@ Upgrading ruby:
 
   - sudo gem uninstall travis
 
-- VTL had gem not found so had to: sudo apt-get install rubygems ([source]{.underline})
+- VTL had gem not found so had to: sudo apt-get install rubygems (<span class="underline">source</span>)
 
 - sudo gem install travis -v 1.8.8 \--no-rdoc \--no-ri
 
